@@ -1,4 +1,6 @@
 define(['jquery', 'jquery-cookie'], function ($) {
+    msgLoad();
+    //加载商品详细信息
     function msgLoad() {
         var local = location.search;
         // console.log(local);
@@ -18,7 +20,12 @@ define(['jquery', 'jquery-cookie'], function ($) {
                             str += `<div class="goodsImg">
                         <div class="slideBox">
                             <img src="${arr[i].image}"
-                                alt="">
+                                alt="" class="small">
+                            <div class="tools"></div>
+                            <div class="area">
+                                <img src="${arr[i].image}"
+                                alt="" class="big">
+                            </div>
                         </div>
                     </div>
                     <div class="goodsMsg" id="${arr[i].number}">
@@ -47,7 +54,12 @@ define(['jquery', 'jquery-cookie'], function ($) {
                             str += `<div class="goodsImg">
                         <div class="slideBox">
                             <img src="${arr[i].image}"
-                                alt="">
+                                alt="" class="small">
+                            <div class="tools"></div>
+                            <div class="area">
+                                <img src="${arr[i].image}"
+                                alt="" class="big">
+                            </div>
                         </div>
                     </div>
                     <div class="goodsMsg" id="${arr[i].number}">
@@ -90,7 +102,28 @@ define(['jquery', 'jquery-cookie'], function ($) {
                     $("#main .goodsMsg .btn").html(`<button class="sc_btn" sign="${st}" sign1="${ed}">加入购物车</button>`)
 
                 })
-
+                var tools = $('#main .goodsImg .tools');
+                var areas = $('#main .goodsImg .area');
+                $('#main .goodsImg .slideBox').mouseenter(function () {
+                    tools.add(areas).show();
+                }).mouseleave(function () {
+                    tools.add(areas).hide();
+                }).mousemove(function (ev) {
+                    var l = ev.clientX - $(this).offset().left - 100;
+                    l = Math.max(l, 0);
+                    l = Math.min(l, 280);
+                    var t = ev.clientY - $(this).offset().top - 100;
+                    t = Math.max(t, 0);
+                    t = Math.min(t, 280);
+                    tools.css({
+                        left: l,
+                        top: t
+                    })
+                    areas.find('.big').css({
+                        left: -2 * l,
+                        top: -2 * t
+                    })
+                })
             },
             error: function (msg) {
                 console.log(msg);
@@ -130,14 +163,18 @@ define(['jquery', 'jquery-cookie'], function ($) {
                     raw: true,
                 })
             }
-
             console.log($.cookie('goods'));
+
         })
 
     }
-
+    // function imgHandleExpand() {
+    //     var tools = $('#main').find('');
+    //     console.log(tools);
+    // }
     return {
         msgLoad: msgLoad,
         sc_btnHandleClick: sc_btnHandleClick,
+        // imgHandleExpand, imgHandleExpand,
     }
 })

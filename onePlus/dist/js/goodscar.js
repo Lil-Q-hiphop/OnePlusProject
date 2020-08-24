@@ -28,7 +28,9 @@ define(['jquery', 'jquery-cookie'], function ($) {
                 // console.log(newArr);
                 let str = ``;
                 var sumprice = null;
+                console.log((newArr[2].newPrice).split('￥')[1]);
                 for (var i = 0; i < newArr.length; i++) {
+
                     str += `<li class="items" id="${newArr[i].number}">
                     <input type="checkbox" class="check">
                     <a href="http://localhost:6161/descxxx.html?${newArr[i].flag}" class="imgs">
@@ -40,13 +42,13 @@ define(['jquery', 'jquery-cookie'], function ($) {
                             ${newArr[i].name}
                         </a>
                     </div>
-                    <div class="price">￥${newArr[i].newPrice} </div>
+                    <div class="price">￥${(newArr[i].newPrice).split('￥')[1]} </div>
                     <div class="numctl">
                         <button>➖</button>
                         <span class="sum">${newArr[i].num}</span>
                         <button>➕</button>
                     </div>
-                    <div class="sumPrice">￥${newArr[i].newPrice * newArr[i].num}</div>
+                    <div class="sumPrice">￥${(newArr[i].newPrice).split('￥')[1] * newArr[i].num}</div>
                     <div class="remove">X</div>
                 </li>`;
                     sumprice += newArr[i].newPrice * newArr[i].num;
@@ -54,13 +56,7 @@ define(['jquery', 'jquery-cookie'], function ($) {
                 }
                 // console.log(str);
                 $("#main #content-main ul").html(str);
-                var b = $("#main #content-main ul li").size();
-                // console.log($('#main #content-result .sc_right .sumprice').html());
-                // $('#main #content-result .sc_left span').html(b);
-                $('#main #content-result .sc_right .sumprice').html('￥' + sumprice);
-                // for(var i = 0; i <oLi.size;i++){
-                //     str2 += ``
-                // }
+
             },
             error: function (msg) {
                 console.log(msg);
@@ -114,30 +110,38 @@ define(['jquery', 'jquery-cookie'], function ($) {
     }
     //通过checkbox选择商品
     function checkboxSelect() {
+        //单独选中某个商品，当选中商品的数量和当前商品数量相等时，默认勾选全选按钮
+        var total = 0;
         $('#main #content-main ul').on('change', '.check', function () {
-            $(this).prop('checked') = $('#main #content-main .selectAll').prop('checked');
-        })
-        $("#main #content-main #content-result").on('change', '.selectAll', function () {
-            if ($('#main #content-main ul input:checked').size() == $('#main #content-main ul input').size) {
-                $(this).prop('checked', true);
+            $('#main #content-main #content-result .sc_left span').html($('#main #content-main ul input:checked').size());
+            // total = $(this).siblings('.sumPrice');
+            if ($(this).prop('checked')) {
+                total += parseFloat($(this).siblings('.sumPrice').html().split('￥')[1]);
             } else {
-                $(this).prop('checked', false);
+                total -= parseFloat($(this).siblings('.sumPrice').html().split('￥')[1]);
+            }
+            $('#main #content-result .sc_right .sumprice').html('￥' + total);
+            if ($('#main #content-main ul input:checked').size() == $('#main #content-main ul input').size()) {
+                $("#main #content-main #content-result .selectAll").prop('checked', true);
+            } else {
+                $("#main #content-main #content-result .selectAll").prop('checked', false);
             }
         })
-        // //全选商品
-        // function selectAll() {
-        //     // console.log('11');
-        //     $('#main #content-result .sc_left').on('change', '.selectAll', function () {
-        //         // console.log(this);
-        //         var isSelect = $(this).prop('checked');
-        //         if (isSelect) {
-        //             $('#main #content-main ul .check').prop('checked', true);
-        //         } else {
-        //             $('#main #content-main ul .check').prop('checked', false);
+        //全选按钮的选中效果和其他单个商品的选中效果保持同步，即全选和全不选
+        $("#main #content-main #content-result").on('change', '.selectAll', function () {
+            $('#main #content-main ul .check').prop('checked', $(this).prop('checked'));
+            if ($(this).prop('checked')) {
+                // console.log($('#main #content-main .sumPrice').each());
+                $('#main #content-main ul .check').each(function (index, ele) {
+                    total += parseFloat($(ele).siblings('.sumPrice').html().split('￥')[1]);
+                })
 
-        //         }
-        //     })
-        //     checkboxSelect();
+            } else {
+                total = 0;
+            }
+            $('#main #content-main #content-result .sc_left span').html($('#main #content-main ul input:checked').size());
+            $('#main #content-result .sc_right .sumprice').html('￥' + total);
+        })
     }
     return {
         loadMsg: loadMsg,

@@ -1,6 +1,6 @@
 define(['jquery'], function ($) {
     function navTop() {
-        var aLis = $('#header .center .page').find('.slide');
+        var aLis = $('#header .center .page');
         // console.log(aLis);
         var aDivs = $('#header .center .page').find('div');
         aDivs.css('display', 'none');
@@ -12,45 +12,46 @@ define(['jquery'], function ($) {
             aDivs.css('display', 'none');
         })
     }
+    //轮播图轮播效果
     function banner() {
-        var oImgBox = $('.imgBox');
-        var oBanner = $('#banner');
-        var aLis = $('#banner').find('li');
-        var aLeftRightBtns = $('.leftRightTabs').find('a');
         var iNum = 0;
-        var timer = null
-        //给整个div添加移入移出操作
-        oBanner.hover(function () {
-            clearInterval(timer);
-        }, function () {
+        var s = $('.imgBox .imgList').length;
+        var timer = null;
+        function auto() {
             timer = setInterval(function () {
-                // if (!isRunning) {
-                //     isRunning = true;
-                // } else {
-                //     return;
-                // }
                 iNum++;
-                tab();
-            }, 2000);
-        })
-
-        timer = setInterval(function () {
-            iNum++;
-            tab();
-        }, 2000)
-
-
-        function tab() {
-            oImgBox.animate({
-                left: -1349 * iNum
-            }, 500, function () {
-                if (iNum == aLis.size() - 1) {
+                if (iNum == s) {
                     iNum = 0;
-                    oImgBox.css('left', 0)
                 }
-            })
+                tab();
+            }, 2000)
         }
-
+        function tab() {
+            $('.imgBox .imgList').eq(iNum).fadeIn(300).siblings().fadeOut(300);
+        }
+        $('.imgBox .imgList .left').click(function () {
+            clearInterval(timer);
+            if (iNum <= -1) {
+                iNum = s - 1;
+            }
+            iNum--;
+            auto();
+            tab();
+        })
+        $('.imgBox .imgList .right').click(function () {
+            clearInterval(timer);
+            if (iNum >= s) {
+                iNum = 0;
+            }
+            iNum++;
+            auto();
+            tab();
+        })
+        $('.imgBox').add('.leftRightTabs').mouseenter(function () {
+            clearInterval(timer);
+        }).mouseleave(function () {
+            auto();
+        })
     }
     return {
         navTop: navTop,

@@ -20,6 +20,9 @@ require(['desc', 'nav'], function (desc, nav) {
     desc.msgLoad();
     //选择商品操作
     desc.sc_btnHandleClick();
+    //顶部导航栏
     nav.navTop();
+    //图片放大镜
+    // desc.imgHandleExpand();
 
 })
