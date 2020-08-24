@@ -1,0 +1,569 @@
+[
+    {
+        "number": 0,
+        "value": "CAT00000111",
+        "tag": "低至8.8折",
+        "path": "https:\/\/www.oneplus.com\/cn\/oneplus-7pro",
+        "flag": "oneplus-7pro",
+        "name": "OnePlus 7 Pro",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201908\/05\/232\/eb48f0aa21853fe648a29523231b736d.png",
+        "prePrice": "最低价3699.00",
+        "textxs": "4款",
+        "newPrice": "最低价3299.00",
+        "serices": [
+            {
+                "name": "OnePlus 7 Pro \u66dc\u5ca9\u7070 6GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201908\/05\/1187\/d7936369ff0b70395bad719ecccc4fe8.png",
+                "prePrice": "3699.00",
+                "textxs": "4款",
+                "newPrice": "3299.00"
+            },
+            {
+                "name": "OnePlus 7 Pro \u66dc\u5ca9\u7070 8GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201908\/05\/1187\/d7936369ff0b70395bad719ecccc4fe8.png",
+                "prePrice": "3999.00",
+                "textxs": "4款",
+                "newPrice": "3499.00"
+            },
+            {
+                "name": "OnePlus 7 Pro \u661f\u96fe\u84dd 8GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201908\/05\/232\/eb48f0aa21853fe648a29523231b736d.png",
+                "prePrice": "3999.00",
+                "textxs": "4款",
+                "newPrice": "3499.00"
+            },
+            {
+                "name": "OnePlus 7 Pro \u661f\u96fe\u84dd 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201908\/05\/232\/eb48f0aa21853fe648a29523231b736d.png",
+                "prePrice": "4299.00",
+                "textxs": "4款",
+                "newPrice": "3899.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000111",
+        "number": 1,
+        "tag": "含赠品",
+        "path": "https:\/\/www.oneplus.com\/cn\/oneplus-8-pro",
+        "flag": "oneplus-8-pro",
+        "name": "OnePlus 8 Pro",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/396\/865c8298cf357ea52c4e266e2fe63f56.png",
+        "prePrice": "",
+        "textxs": "5款",
+        "newPrice": "最低价5399.00",
+        "serices": [
+            {
+                "name": "OnePlus 8 Pro \u84dd\u8c03 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/396\/865c8298cf357ea52c4e266e2fe63f56.png",
+                "prePrice": "",
+                "newPrice": "5999.00"
+            },
+            {
+                "name": "OnePlus 8 Pro \u9752\u7a7a 8GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/1952\/07a003a55d454fa355414e31c9787643.png",
+                "prePrice": "",
+                "newPrice": "5399.00"
+            },
+            {
+                "name": "OnePlus 8 Pro \u9752\u7a7a 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/1952\/07a003a55d454fa355414e31c9787643.png",
+                "prePrice": "",
+                "newPrice": "5999.00"
+            },
+            {
+                "name": "OnePlus 8 Pro \u9ed1\u955c 8GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/513\/ec61284af2fa5660f293a0b506340999.png",
+                "prePrice": "",
+                "newPrice": "5399.00"
+            },
+            {
+                "name": "OnePlus 8 Pro \u9ed1\u955c 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/513\/ec61284af2fa5660f293a0b506340999.png",
+                "prePrice": "",
+                "newPrice": "5999.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000111",
+        "number": 2,
+        "tag": "含赠品",
+        "path": "https:\/\/www.oneplus.com\/cn\/oneplus-8",
+        "flag": "oneplus-8",
+        "name": "OnePlus 8",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/137\/2f69ace348337786f97f41d003a08a94.png",
+        "prePrice": "",
+        "textxs": "6款",
+        "newPrice": "最低价3999.00",
+        "serices": [
+            {
+                "name": "OnePlus 8 \u94f6\u7ffc 8GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/137\/2f69ace348337786f97f41d003a08a94.png",
+                "prePrice": "",
+                "newPrice": "3999.00"
+            },
+            {
+                "name": "OnePlus 8 \u94f6\u7ffc 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/137\/2f69ace348337786f97f41d003a08a94.png",
+                "prePrice": "",
+                "newPrice": "4599.00"
+            },
+            {
+                "name": "OnePlus 8 \u9752\u7a7a 8GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/163\/56933e7ad30d2d425141ae5eff51d438.png",
+                "prePrice": "",
+                "newPrice": "3999.00"
+            },
+            {
+                "name": "OnePlus 8 \u9752\u7a7a 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/163\/56933e7ad30d2d425141ae5eff51d438.png",
+                "prePrice": "",
+                "newPrice": "4599.00"
+            },
+            {
+                "name": "OnePlus 8 \u9ed1\u955c 8GB+128GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/634\/cd9a1cb049ffee0ded3f0a549c58560d.png",
+                "prePrice": "",
+                "newPrice": "3999.00"
+            },
+            {
+                "name": "OnePlus 8 \u9ed1\u955c 12GB+256GB",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202005\/08\/634\/cd9a1cb049ffee0ded3f0a549c58560d.png",
+                "prePrice": "",
+                "newPrice": "4599.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000211",
+        "tag": "新品",
+        "number": 3,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-buds",
+        "flag": "oneplus-buds",
+        "name": "OnePlus Buds",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202007\/13\/1-m00-02-fa-rbqgjv8mp1eabge_aaeaq5hxrgk551.png",
+        "prePrice": "",
+        "textxs": "2款",
+        "newPrice": "499.00",
+        "serices": [
+            {
+                "name": "OnePlus Buds \u767d\u8272",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202007\/13\/1-m00-02-fa-rbqgjv8mp1eabge_aaeaq5hxrgk551.png",
+                "prePrice": "",
+                "newPrice": "499.00"
+            },
+            {
+                "name": "OnePlus Buds \u84dd\u8272",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202007\/13\/1-m00-02-fa-rbqgjv8mp7cam_vsaaf3eb3kfbg608.png",
+                "prePrice": "",
+                "newPrice": "499.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "5.0折",
+        "number": 4,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-type-c-otg-cable",
+        "flag": "oneplus-type-c-otg-cable",
+        "name": "\u4e00\u52a0Type-C OTG\u6570\u636e\u7ebf",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201611\/12\/1946\/26da3eb22d88d337fd0136f5cbfc9aa3.png",
+        "prePrice": "59",
+        "textxs": "",
+        "newPrice": "29.50"
+    },
+    {
+        "value": "CAT00000511",
+        "value1": "CAT00000611",
+        "number": 5,
+        "tag": "8.0折",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-travel-bundle",
+        "flag": "oneplus-travel-bundle",
+        "name": "OnePlus \u65c5\u884c\u5957\u88c5",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/06\/680\/41283f832fbe1246c898da2d40da9529.png",
+        "prePrice": "258.00",
+        "textxs": "",
+        "newPrice": "206.40"
+    },
+    {
+        "value": "CAT00000211",
+        "value1": "CAT00000611",
+        "number": 6,
+        "tag": "8.0折",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-typec-bundle",
+        "flag": "oneplus-typec-bundle",
+        "name": "OnePlus \u94f6\u8033\u5957\u88c5",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201901\/30\/905\/a799d8177c4223f7a02b6ab2ed8caf82.png",
+        "prePrice": "158.00",
+        "textxs": "",
+        "newPrice": "126.40"
+    },
+    {
+        "tag": "",
+        "number": 7,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5481100016",
+        "flag": "5481100016",
+        "name": "OnePlus Warp\u95ea\u514530\u65e0\u7ebf\u5145\u7535\u5668 \u4e2d\u89c4",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/12\/6d6ccbfbb1a58a2f6e5e9b7237d58ddc.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "299.00"
+    },
+    {
+        "value": "CAT00000211",
+        "number": 8,
+        "tag": "",
+        "path": "https:\/\/www.oneplus.com\/cn\/5481100012",
+        "flag": "5481100012",
+        "name": "\u4e00\u52a0\u4e91\u8033 Z",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/770\/4952caf7ab68960224f31a05a40324d4.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "249.00",
+        "serices": [
+            {
+                "name": "\u4e00\u52a0\u4e91\u8033 Z \u7ecf\u5178\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/770\/4952caf7ab68960224f31a05a40324d4.png",
+                "prePrice": "",
+                "newPrice": "249.00"
+            },
+            {
+                "name": "\u4e00\u52a0\u4e91\u8033 Z \u5b9d\u77f3\u84dd",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/208\/3780fc140a30e05911b93a2d7a2a4a45.png",
+                "prePrice": "",
+                "newPrice": "249.00"
+            },
+            {
+                "name": "\u4e00\u52a0\u4e91\u8033 Z \u71d5\u9ea6\u767d",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/813\/708d192115f36b13effa14a5346c1b7e.png",
+                "prePrice": "",
+                "newPrice": "249.00"
+            },
+            {
+                "name": "\u4e00\u52a0\u4e91\u8033 Z \u8584\u8377\u7eff",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/56\/c388da068fc40a21ff6614bcc986a72b.png",
+                "prePrice": "",
+                "newPrice": "249.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000311",
+        "number": 9,
+        "tag": "",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100147",
+        "flag": "5431100147",
+        "name": "OnePlus 8 \u82b3\u7eb6\u7ea4\u7ef4\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/747\/02eb30fbefee79cb4bbb9e033c2a7132.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "199.00"
+    },
+    {
+        "value": "CAT00000311",
+        "number": 10,
+        "tag": "",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100137",
+        "flag": "5431100137",
+        "name": "OnePlus 8 \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1354\/248aec6ab932515a111eff8e3bf91d59.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "99.00",
+        "serices": [
+            {
+                "name": "OnePlus 8 \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3 \u7802\u5ca9\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1354\/248aec6ab932515a111eff8e3bf91d59.png",
+                "prePrice": "",
+                "newPrice": "99.00"
+            },
+            {
+                "name": "OnePlus 8 \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3 \u6e56\u9752",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/165\/5e65d672a05bda120765e9a364dc436b.png",
+                "prePrice": "",
+                "newPrice": "99.00"
+            },
+            {
+                "name": "OnePlus 8 \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3 \u70df\u7d2b",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1481\/7af937104de2ff1e27b976697365e84f.png",
+                "prePrice": "",
+                "newPrice": "99.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000311",
+        "number": 11,
+        "tag": "",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100143",
+        "flag": "5431100143",
+        "name": "OnePlus 8 Pro \u82b3\u7eb6\u7ea4\u7ef4\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/488\/9e28e39ca306a47dd43e1ed8439800d2.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "199.00"
+    },
+    {
+        "value": "CAT00000311",
+        "number": 12,
+        "tag": "",
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100144",
+        "flag": "5431100144",
+        "name": "OnePlus 8 Pro \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1059\/61e3e6884765d7bc143360fd45ebae3a.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "99.00",
+        "serices": [
+            {
+                "name": "OnePlus 8 Pro \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3 \u7802\u5ca9\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1059\/61e3e6884765d7bc143360fd45ebae3a.png",
+                "newPrice": "99.00"
+            },
+            {
+                "name": "OnePlus 8 Pro \u7802\u5ca9\u5168\u5305\u4fdd\u62a4\u58f3 \u6e56\u9752",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1933\/9bfd8a2e7403399331f55d0405434b17.png",
+                "newPrice": "99.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000311",
+        "tag": "",
+        "number": 13,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100146",
+        "flag": "5431100146",
+        "name": "OnePlus 8 \u5c3c\u9f99\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202003\/26\/1438\/f7cecc94b8695a26402c4ff800a23177.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "149.00"
+    },
+    {
+        "value": "CAT00000311",
+        "tag": "",
+        "number": 14,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5431100148",
+        "flag": "5431100148",
+        "name": "OnePlus 8 \u900f\u660e\u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202004\/15\/1097\/526927345c2e736e74aaadadae4726dd.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "119.00"
+    },
+    {
+        "value": "CAT00000311",
+        "tag": "",
+        "number": 15,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-7t-silicone-protective-case",
+        "flag": "oneplus-7t-silicone-protective-case",
+        "name": "OnePlus 7T \u7845\u80f6\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/19\/61\/bbbd1f80aa2dda948b29c5df55253bc7.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "129.00"
+    },
+    {
+        "value": "CAT00000311",
+        "tag": "",
+        "number": 16,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-7t-pro-protective-case",
+        "flag": "oneplus-7t-pro-protective-case",
+        "name": "OnePlus 7T Pro \u4e2a\u6027\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/19\/1479\/b1a7a5ba12633d0d4ca004a909618c8c.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "最低价99.00",
+        "serices": [
+            {
+                "name": "OnePlus 7T Pro \u4e2a\u6027\u4fdd\u62a4\u58f3 \u7802\u5ca9\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/19\/1479\/b1a7a5ba12633d0d4ca004a909618c8c.png",
+                "prePrice": "",
+                "newPrice": "99.00"
+            },
+            {
+                "name": "OnePlus 7T Pro \u4e2a\u6027\u4fdd\u62a4\u58f3 \u82b3\u7eb6\u7ea4\u7ef4",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/19\/592\/58405bddda0945a267f8e76d17de68ba.png",
+                "prePrice": "",
+                "newPrice": "99.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000311",
+        "tag": "",
+        "number": 17,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-7t-pro-bumper-case",
+        "flag": "oneplus-7t-pro-bumper-case",
+        "name": "OnePlus 7T Pro \u5168\u5305\u4fdd\u62a4\u58f3",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/23\/1035\/f63b1502c499412b47fd8028db9bfeed.png",
+        "prePrice": "",
+        "textxs": "",
+        "newPrice": "最低价149.00",
+        "serices": [
+            {
+                "name": "OnePlus 7T Pro \u5168\u5305\u4fdd\u62a4\u58f3 \u5c3c\u9f99",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/23\/1035\/f63b1502c499412b47fd8028db9bfeed.png",
+                "prePrice": "",
+                "newPrice": "149.00"
+            },
+            {
+                "name": "OnePlus 7T Pro \u5168\u5305\u4fdd\u62a4\u58f3 \u82b3\u7eb6\u7ea4\u7ef4",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201909\/23\/1587\/f86308796dd82615d4bf7521f29b39a1.png",
+                "prePrice": "",
+                "newPrice": "149.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "",
+        "number": 18,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-warp-charge-30-power-adapter",
+        "flag": "oneplus-warp-charge-30-power-adapter",
+        "name": "\u4e00\u52a0Warp\u95ea\u5145\u7535\u6e90\u9002\u914d\u5668",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/02\/128\/d370b62e0cf27c521cadd14220b4b308.png",
+        "prePrice": "",
+        "textxs": "1款",
+        "newPrice": "149.00"
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "",
+        "number": 19,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-warp-charge-30-car-charger",
+        "flag": "oneplus-warp-charge-30-car-charger",
+        "name": "\u4e00\u52a0Warp\u95ea\u5145\u8f66\u8f7d\u5145\u7535\u5668",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/02\/1750\/e196329a2ae13dfb71bd9c0809a3e5f6.png",
+        "prePrice": "",
+        "textxs": "1款",
+        "newPrice": "199.00"
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "",
+        "number": 20,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-warp-charge-30-type-c-cable",
+        "flag": "oneplus-warp-charge-30-type-c-cable",
+        "name": "\u4e00\u52a0 Warp \u95ea\u5145  Type-C \u6570\u636e\u7ebf",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/06\/1149\/3b2ddfbc41853ce66be36bb73455e2ad.png",
+        "prePrice": "",
+        "textxs": "2款",
+        "newPrice": "最低价79.00",
+        "serices": [
+            {
+                "name": "\u4e00\u52a0 Warp \u95ea\u5145  Type-C \u6570\u636e\u7ebf 150cm",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/06\/1149\/3b2ddfbc41853ce66be36bb73455e2ad.png",
+                "prePrice": "",
+                "newPrice": "79.00"
+            },
+            {
+                "name": "\u4e00\u52a0 Warp \u95ea\u5145  Type-C \u6570\u636e\u7ebf 100cm",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/06\/665\/0a6970ae061b602d32ce662592055d62.png",
+                "prePrice": "",
+                "newPrice": "79.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "",
+        "number": 21,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-type-c-adapter",
+        "flag": "oneplus-type-c-adapter",
+        "name": "OnePlus Type-C\u8f6c3.5mm\u8f6c\u63a5\u7ebf",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201810\/28\/1790\/ca4e8af496116a5647c789ee6000d9e9.png",
+        "prePrice": "",
+        "textxs": "1款",
+        "newPrice": "39.00"
+    },
+    {
+        "tag": "",
+        "number": 22,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-type-c-bullets-2t",
+        "flag": "oneplus-type-c-bullets-2t",
+        "name": "\u4e00\u52a0\u94f6\u8033 2T",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201810\/28\/800\/12c096a121ab9a86d8ac9b02dc3d7a4c.png",
+        "prePrice": "",
+        "textxs": "1款",
+        "newPrice": "119.00"
+    },
+    {
+        "value": "CAT00000711",
+        "tag": "",
+        "number": 23,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-travel-backpack",
+        "flag": "oneplus-travel-backpack",
+        "name": "\u4e00\u52a0\u65c5\u884c\u53cc\u80a9\u5305",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201706\/22\/317\/6e9d4458ee0f0f86c9e5dcfd2d577ee1.png",
+        "prePrice": "",
+        "textxs": "2款",
+        "newPrice": "399.00",
+        "serices": [
+            {
+                "name": "\u4e00\u52a0\u65c5\u884c\u53cc\u80a9\u5305 \u83ab\u5170\u8fea\u7070",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201706\/22\/317\/6e9d4458ee0f0f86c9e5dcfd2d577ee1.png",
+                "prePrice": "",
+                "newPrice": "399.00"
+            },
+            {
+                "name": "\u4e00\u52a0\u65c5\u884c\u53cc\u80a9\u5305 \u592a\u7a7a\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201706\/22\/1724\/aacc5822ff29213772c6a031a5db71c7.png",
+                "prePrice": "",
+                "newPrice": "399.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000711",
+        "tag": "",
+        "number": 24,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-explorer-backpack",
+        "flag": "oneplus-explorer-backpack",
+        "name": "\u4e00\u52a0 Explorer \u53cc\u80a9\u5305",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201811\/14\/1209\/b0990b01d3a8c92e9ac600be454441e2.png",
+        "prePrice": "",
+        "textxs": "2款",
+        "newPrice": "499.00",
+        "serices": [
+            {
+                "name": "\u4e00\u52a0 Explorer \u53cc\u80a9\u5305 \u7384\u77f3\u9ed1",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201811\/14\/1209\/b0990b01d3a8c92e9ac600be454441e2.png",
+                "prePrice": "",
+                "newPrice": "499.00"
+            },
+            {
+                "name": "\u4e00\u52a0 Explorer \u53cc\u80a9\u5305 \u5ca9\u4e95\u7eff",
+                "image": "https:\/\/image01.oneplus.cn\/ebp\/201811\/14\/1275\/a90bbcba96bc478d759743419aae2a61.png",
+                "prePrice": "",
+                "newPrice": "499.00"
+            }
+        ]
+    },
+    {
+        "value": "CAT00000511",
+        "value1": "CAT00000611",
+        "tag": "8.0折",
+        "number": 25,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/oneplus-warp-charge-30-power-bundle",
+        "flag": "oneplus-warp-charge-30-power-bundle",
+        "name": "OnePlus Warp  \u95ea\u5145\u5957\u88c5",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/201905\/06\/70\/5636f8811efd6e175ac00a6a7f714c6c.png",
+        "prePrice": "228.00",
+        "textxs": "1款",
+        "newPrice": "182.40"
+    },
+    {
+        "value": "CAT00000511",
+        "tag": "",
+        "number": 26,
+        "path": "https:\/\/www.oneplus.com\/cn\/product\/5481100032",
+        "flag": "5481100032",
+        "name": "\u4e00\u52a0 20W \u95ea\u5145\u7535\u6e90\u9002\u914d\u5668",
+        "image": "https:\/\/image01.oneplus.cn\/ebp\/202004\/30\/145\/1801f7ccd04ebac706de51e86a8217a9.png",
+        "prePrice": "",
+        "textxs": "1款",
+        "newPrice": "39.00"
+    }
+]

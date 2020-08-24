@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://image01.oneplus.cn/shop/202003/19/677/7fa57f35c179bad9cc9f18e2dd9b1d40.ico?20200730211605">
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/require.js" defer async='true' data-main="js/car"></script>
+</head>
+
+<body>
+    <header id="header">
+        <ul class="left">
+            <li class="icon brand">
+                <a href="https://www.oneplus.com/cn" class="ico-wrapper">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="center">
+            <li class="page">
+                <a class="slide" href="https://www.oneplus.com/cn/8-pro?from=head">8 系列<span
+                        class="series-new">New</span></a>
+                <div class="container-text">
+                    <ul>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/8-pro?from=head">
+                                <i class="series-item-new">New</i>
+                                <i class="iconfont">&#xe653;</i>
+                                <span>OnePlus 8 Pro</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/8?from=head">
+                                <i class="series-item-new">New</i>
+                                <i class="iconfont">&#xe653;</i>
+                                <span>OnePlus 8</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="page">
+                <a class="slide" href="https://www.oneplus.com/cn/7t?from=head">7T 系列</a>
+                <div class="container-text">
+                    <ul>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/7t?from=head">
+                                <i class="iconfont">&#xe653;</i>
+                                <span>OnePlus 7T</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/7t-pro?from=head">
+                                <i class="iconfont">&#xe653;</i>
+                                <span>OnePlus 7T Pro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="page">
+                <a class="slide" href="https://www.oneplus.com/cn/store?from=head">商城</a>
+                <div class="container-text">
+                    <ul>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/phones?from=head">
+                                <i class="iconfont">&#xe71f;</i>
+                                <span>手机</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/audio?from=head">
+                                <i class="iconfont">&#xe60f;</i>
+                                <span>耳机</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/cases?from=head">
+                                <i class="iconfont">&#xe610;</i>
+                                <span>壳/膜</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/cables?from=head">
+                                <i class="iconfont">&#xe60e;</i>
+                                <span>适配器/数据线</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/bundles?from=head">
+                                <i class="iconfont">&#xe64b;</i>
+                                <span>套装</span>
+                            </a>
+                        </li>
+                        <li class="show-window">
+                            <a href="https://www.oneplus.com/cn/store/lifestyle?from=head">
+                                <i class="iconfont">&#xe613;</i>
+                                <span>生活馆</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="page">
+                <a href="https://www.oneplus.com/cn/brand?from=head">品牌</a>
+            </li>
+            <li class="page">
+                <a href="https://www.oneplus.com/cn/support?from=head">服务</a>
+            </li>
+            <li class="page">
+                <a href="http://www.oneplusbbs.com?from=head">论坛</a>
+            </li>
+            <li class="page">
+                <a href="https://www.oneplus.com/cn/retail?from=head">零售店</a>
+            </li>
+        </ul>
+        <ul class="right">
+            <li><a href=""><i class="iconfont">&#xe60b;</i></a></li>
+            <li><a href=""><i class="iconfont">&#xe6d7;</i></a></li>
+        </ul>
+    </header>
+    <div id="main">
+        <div id="main-content">
+            <div id="content-title">购物车</div>
+            <div id="content-main">
+                <form action="">
+                    <ul>
+                        <!-- 
+                        <li class="items">
+                            <input type="checkbox" class="check">
+                            <a href="https://www.oneplus.com/cn/product/5481100012" class="imgs">
+                                <img src="https://image01.oneplus.cn/ebp/202003/26/770/4952caf7ab68960224f31a05a40324d4_84_84.png"
+                                    alt="">
+                            </a>
+                            <div class="goodsname">
+                                <a href="https://www.oneplus.com/cn/product/5481100012" class="nms">
+                                    一加云耳Z经典黑
+                                </a>
+                            </div>
+                            <div class="price">￥249.00</div>
+                            <div class="numctl">
+                                <span></span>
+                                <span>1</span>
+                                <span>➕</span>
+                            </div>
+                            <div class="sumPrice">￥249.00</div>
+                            <div class="remove">X</div>
+                        </li> 
+                    -->
+                    </ul>
+                    <div id="content-result">
+                        <div class="sc_left">
+                            <input type="checkbox" class="selectAll">共选择<span></span>件商品
+                        </div>
+                        <div class="sc_right">
+                            <div class="ms">
+                                <span>总价:</span>
+                                <span class="sumprice">￥249.00</span>
+                            </div>
+                            <div class="btn">
+                                <button>继续购物</button>
+                                <button>去结算</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="serverBox">
+            <section>
+                <a href="https://support-cn.oneplus.com/app/answers/detail/a_id/33" target="_blank"">
+                    <img src=" images/7.png" alt="">
+                    <p>7天无理由退货</p>
+                </a>
+            </section>
+            <section>
+                <a href=" https://support-cn.oneplus.com/app/answers/detail/a_id/33" target="_blank"">
+                    <img src=" images/15.png" alt="">
+                    <p>15天退货保障</p>
+                </a>
+            </section>
+            <section>
+                <a href=" https://support-cn.oneplus.com/app/answers/detail/a_id/33" target="_blank"">
+                    <img src=" images/30.png" alt="">
+                    <p>30天换货保障</p>
+                </a>
+            </section>
+            <section>
+                <a href=" https://support-cn.oneplus.com/app/answers/detail/a_id/33" target="_blank"">
+                    <img src=" images/99.png" alt="">
+                    <p>99元全场包邮</p>
+                </a>
+            </section>
+
+        </div>
+    </div>
+    <div id="page-footer">
+        <footer id="footer">
+            <div class="btlist">
+                <div class="footer-nav">
+                    <dl>
+                        <dt>一加产品</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/8-pro?from=foot">OnePlus 8 Pro</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/8?from=foot">OnePlus 8</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/7t-pro?from=foot">OnePlus 7T Pro</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/7t?from=foot">OnePlus 7T</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/7pro?from=foot">OnePlus 7 Pro</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/7?from=foot">OnePlus 7</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>配件</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/store/audio?from=foot">耳机</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/store/cases?from=foot">壳/膜</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/store/cables?from=foot">适配器/数据线</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/store/bundles?from=foot">套装</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/store/lifestyle?from=foot">生活馆</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>热门活动</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/trade-in?from=foot" target="_blank">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="https://photos.oneplus.com/cn?from=foot">Shot on OnePlus</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/invite-code?from=foot">邀请码购买</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/education?from=foot">教育优惠</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>关于一加</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/brand?from=foot">了解一加</a>
+                                </li>
+                                <li>
+                                    <a href="https://career.oneplus.com/cn?from=foot">加入一加</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/sustainability?from=foot">可持续发展</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/hydrogenos?from=foot">HydrogenOS</a>
+                                </li>
+                                <li>
+                                    <a href="https://cloud.h2os.com?from=foot">云服务</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.h2os.com/preinstall?from=foot">预置应用公示</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>服务支持</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/support/shopping-help?from=foot">购买帮助</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.oneplus.com/cn/support/product/protection-service?from=foot">购买保障</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/support/manuals?from=foot">用户手册</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/support/repair?from=foot">寄修服务</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/support/service-center?from=foot">服务中心</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.oneplus.com/cn/support/contact?from=foot">联系我们</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="db">
+                <div class="dbt">
+                    <div class="top">
+                        <div class="left">更多选购方式，请
+                            <a href="https://www.oneplus.com/cn/retail?from=foot">&nbsp;查找零售店&nbsp;</a>
+                            或
+                            <a class="showTips">&nbsp;一加微信官方商城</a>
+                        </div>
+                        <div class="right">
+                            <div class="btn-container">
+                                <a href="tel:400 - 888 - 1111">
+                                    <i class="iconfont">&#xe6d4;</i>
+                                    <span>400 - 888 - 1111</span>
+                                </a>
+                                <a href="https://chat.sobot.com/chat/h5/v2/index.html?sysnum=8b1ffba807764bc3bf2da878e5bb3df6"
+                                    target="_blank">
+                                    <i class="iconfont">&#xe611;</i>
+                                    <span>在线客服</span>
+                                </a>
+                            </div>
+                            <p class="time ">周一至周日 9:00 - 22:00</p>
+                            <span class="div-line">|</span>
+                            <p class="social-media">
+                                <a href="javascript:;" class="link-gray link-wechat">
+                                    <i class="iconfont wechat">&#xe62e;</i>
+                                    <img class="wechat-qr-code"
+                                        src="https://image01.oneplus.cn/shop/202003/30/985/4a29e5bdf6e65e4ad9d7d7810d599a2f.jpg"
+                                        alt="WeChat QR Code" style="display: none;">
+                                </a>
+                                <a href="https://weibo.com/oneplusmobile" target="_blank" class="link-gray">
+                                    <i class="iconfont weibo">&#xe63e;</i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="container">
+                            <div class="self-help">
+                                <div>
+                                    中国大陆 ( 简体中文 / CNY )
+                                </div>
+                                <div class="link">
+                                    <ul>
+                                        <li><a
+                                                href="https://account.oneplus.com/cn/agreement_privacy?from=foot">隐私政策</a>
+                                        </li>|
+                                        <li><a href="https://account.oneplus.com/cn/agreement?from=foot">用户协议</a></li>|
+                                        <li><a
+                                                href="https://account.oneplus.com/cn/terms-and-conditions?from=foot">竞赛规则</a>
+                                        </li>|
+                                        <li><a href="https://account.oneplus.com/cn/ip-policy?from=foot">知识产权政策</a></li>
+                                        |
+                                        <li><a href="mailto:security@oneplus.com">安全问题反馈</a></li>|
+                                        <li><a href="https://www.oneplus.com/cn/sitemap?from=foot">站点地图</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-record">
+                                <span class="no-wrap">© 2013-2020 OnePlus. All Rights Reserved.</span>
+                            </div>
+                            <div class="copy-right">
+                                <p class="font-descriptions">
+                                    <span class="no-wrap">粤ICP备<a href="http://www.beian.miit.gov.cn"
+                                            target="_blank">13080605</a>号-4</span><span> | </span><span
+                                        class="no-wrap">备案主体编号:</span>
+                                    <span class="no-wrap">44201910955995</span> <br>
+                                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402001407"
+                                        target="_blank" track-key="d56663b49c29ea630fdebd39ba0a9acb" et-attached="1"
+                                        class="under-supervision">
+                                        <img src="https://statics.oneplus.cn/ov/assets/images/footer/badge.png"
+                                            alt="粤公网安备 44030402001407号">
+                                        <span>粤公网安备 44030402001407号</span>
+                                    </a>
+                                </p>
+                                <div class="certificate-container">
+                                    <a class="certificate-badge"
+                                        href="https://image01.oneplus.cn/shop/201811/13/1139/4ac3b42ccae6aa15de8ca8ce6df0140b.jpg"
+                                        target="_blank" track-data="电子营业执照">
+                                        <img src="https://image01.oneplus.cn/shop/201811/13/835/51638e8fd2593c56856278feb794b506.png"
+                                            alt="电子营业执照" title="电子营业执照" width="83" height="30">
+                                    </a>
+                                    <a class="certificate-badge"
+                                        href="https://ss.knet.cn/verifyseal.dll?sn=e14063044030050707awmq000000&amp;ct=df&amp;a=1&amp;pa=20151014"
+                                        track-key="97fd6aef8e1b0f732c6abdfd2ffbb811" et-attached="1" track-data="可信网站"
+                                        target="_blank">
+                                        <img src="https://statics.oneplus.cn/ov/assets/images/footer/cnnic.png"
+                                            width="83" height="30" alt="可信网站">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>

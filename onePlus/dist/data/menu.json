@@ -1,0 +1,101 @@
+[
+    {
+        "class": "精选商品",
+        "serise": [
+            {
+                "value": "CAT00000111",
+                "text": "手机",
+                "url": "https://www.oneplus.com/cn/6t",
+                "track": "TD_商城_分类_手机"
+            },
+            {
+                "value": "CAT00000211",
+                "text": "耳机",
+                "url": "https://www.oneplus.com/cn/store/audio",
+                "track": "TD_商城_分类_耳机"
+            },
+            {
+                "value": "CAT00000311",
+                "text": "壳/膜",
+                "url": "https://www.oneplus.com/cn/store/cases",
+                "track": "TD_商城_分类_壳/膜"
+            },
+            {
+                "value": "CAT00000511",
+                "text": "适配器/数据线",
+                "url": "https://www.oneplus.com/cn/store/cables",
+                "track": "TD_商城_分类_适配器/数据线"
+            },
+            {
+                "value": "CAT00000611",
+                "text": "套装",
+                "url": "https://www.oneplus.com/cn/store/bundles",
+                "track": "TD_商城_分类_套装"
+            },
+            {
+                "value": "CAT00000711",
+                "text": "生活馆",
+                "url": "https://www.oneplus.com/cn/store/lifestyle",
+                "track": "TD_商城_分类_生活馆"
+            }
+        ]
+    },
+    {
+        "class": "全部机型",
+        "serise": [
+            {
+                "text": "OnePlus 8 Pro",
+                "code": "TAG0000001211"
+            },
+            {
+                "text": "OnePlus 8",
+                "code": "TAG0000001111"
+            },
+            {
+                "text": "OnePlus 7T Pro",
+                "code": "TAG0000001011"
+            },
+            {
+                "text": "OnePlus 7T",
+                "code": "TAG0000000911"
+            },
+            {
+                "text": "OnePlus 7 Pro",
+                "code": "TAG0000000711"
+            },
+            {
+                "text": "OnePlus 7",
+                "code": "TAG0000000611"
+            },
+            {
+                "text": "OnePlus 6T",
+                "code": "TAG0000000511"
+            },
+            {
+                "text": "OnePlus 6",
+                "code": "TAG0000000411"
+            },
+            {
+                "text": "OnePlus 5T",
+                "code": "TAG0000000311"
+            }
+        ]
+    },
+    {
+        "class": "排序方式",
+        "serise": [
+            {
+                "value": "01",
+                "text": "价格从低到高"
+            },
+            {
+                "value": "02",
+                "text": "价格从高到低"
+            },
+            {
+                "value": "03",
+                "text": "最新添加"
+            }
+        ]
+    }
+]
