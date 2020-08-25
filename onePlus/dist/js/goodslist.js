@@ -1,4 +1,7 @@
-define(['jquery'], function ($) {
+define(['jquery', 'jquery-cookie'], function ($) {
+    dlgoods();
+    goodsCarSum();
+    //将商品加载到界面
     function dlgoods() {
         $.ajax({
             type: 'get',
@@ -6,30 +9,30 @@ define(['jquery'], function ($) {
             success: function (arr) {
                 // console.log(arr);
                 let str = ``;
+                let str2 = ``;
                 for (var i = 0; i < arr.length; i++) {
-                    str += `<div class="goodsList ${arr[i].value} ">
-                    <a target="_blank" class="list " href="http://localhost:6161/descxxx.html?${arr[i].flag}">
-                        <div class="products-tag">${arr[i].tag}</div>
-                        <div class="card-image">
-                            <img src="${arr[i].image}"
-                                alt="">
-                        </div>
-                        <span class="text-xs">${arr[i].textxs}</span>
-                        <span class="accessory-name">${arr[i].name}</span>
-                        <span class="accessory-price">
-                            <del class="price">${arr[i].prePrice}</del>
-                            <span class="discounted">${arr[i].newPrice}</span>
-                        </span>
-                    </a>
-                </div>`;
+                    str += `<div class="goodsList ${arr[i].value} ${arr[i].value1}">
+                        <a target="_blank" class="list " href="http://localhost:6161/descxxx.html?${arr[i].flag}">
+                            <div class="products-tag">${arr[i].tag}</div>
+                            <div class="card-image">
+                                <img src="${arr[i].image}" alt="">
+                            </div>
+                            <span class="text-xs">${arr[i].textxs}</span>
+                            <span class="accessory-name">${arr[i].name}</span>
+                            <span class="accessory-price">
+                                <del class="price">${arr[i].prePrice}</del>
+                                <span class="discounted">${arr[i].newPrice}</span>
+                            </span>
+                        </a>
+                    </div>`;
                 }
                 $("#goodsBox").html(str);
 
                 var oS = $("#menuBox .form-group").find(".form-control");
                 oS.change(function () {
                     var content = $(this).val();
-                    function findNode(value) {
-                        return $("#goodsBox .goodsList").not(value).css('display', 'none');
+                    function findNode(value, value1) {
+                        return $("#goodsBox .goodsList").not(value, value1).css('display', 'none');
                     }
                     switch (content) {
                         case '手机':
@@ -59,24 +62,31 @@ define(['jquery'], function ($) {
                         default:
                             $("#goodsBox").html(str);
                             break;
-
                     }
-
-                    // findNode('.CAT00000111');
-
                 })
-
-
-
-
             },
             error: function (msg) {
                 console.log(msg);
             }
         })
     }
+    //显示购物车中的商品个数
+    function goodsCarSum() {
+        var cookieStr = $.cookie('goods');
+        var sum = 0;
+        if (cookieStr) {
+            var cookieArr = JSON.parse(cookieStr);
+            for (var i = 0; i < cookieArr.length; i++) {
+                sum += cookieArr[i].num;
+            }
+            // console.log(cookieArr);
+        }
+        // console.log(sum);
+        $('#header .right span').html(sum);
+    }
     return {
         dlgoods: dlgoods,
+        goodsCarSum: goodsCarSum,
 
     }
 })

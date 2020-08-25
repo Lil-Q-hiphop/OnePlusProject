@@ -1,8 +1,9 @@
 define(['jquery', 'jquery-cookie'], function ($) {
-    loadMsg();
-
+    // loadMsg();
+    goodsCarSum();
     //加载购物车商品信息
     function loadMsg() {
+        goodsCarSum();
         var cookieStr = $.cookie('goods');
         if (!cookieStr) {
             return;
@@ -11,10 +12,8 @@ define(['jquery', 'jquery-cookie'], function ($) {
             type: 'get',
             url: '../data/goodslist.json',
             success: function (arr) {
-                // console.log(arr);
                 var newArr = [];
                 var cookieArr = JSON.parse(cookieStr);
-                // console.log(cookieArr.length);
                 for (var i = 0; i < cookieArr.length; i++) {
                     // console.log(i);
                     for (var j = 0; j < arr.length; j++) {
@@ -25,10 +24,8 @@ define(['jquery', 'jquery-cookie'], function ($) {
                         }
                     }
                 }
-                // console.log(newArr);
                 let str = ``;
                 var sumprice = null;
-                console.log((newArr[2].newPrice).split('￥')[1]);
                 for (var i = 0; i < newArr.length; i++) {
 
                     str += `<li class="items" id="${newArr[i].number}">
@@ -54,7 +51,6 @@ define(['jquery', 'jquery-cookie'], function ($) {
                     sumprice += newArr[i].newPrice * newArr[i].num;
 
                 }
-                // console.log(str);
                 $("#main #content-main ul").html(str);
 
             },
@@ -67,10 +63,8 @@ define(['jquery', 'jquery-cookie'], function ($) {
     function removeHandleDelete() {
         $("#main #content-main").on('click', '.remove', function () {
             var id = $(this).closest('li').remove().attr('id');
-            // console.log(id);
             var cookieStr = $.cookie('goods');
             var cookieArr = JSON.parse(cookieStr);
-            // console.log(cookieArr);
             var index = cookieArr.findIndex(item => item.id1 == id)
             cookieArr.splice(index, 1);
             if (cookieArr.length) {
@@ -81,7 +75,10 @@ define(['jquery', 'jquery-cookie'], function ($) {
             } else {
                 $.cookie('goods', null)
             }
+            goodsCarSum();
         })
+
+
     }
     //通过加减改变商品数量
     function numctlHandleChange() {
@@ -90,7 +87,6 @@ define(['jquery', 'jquery-cookie'], function ($) {
             var cookieStr = $.cookie('goods');
             var cookieArr = JSON.parse(cookieStr);
             var index = cookieArr.findIndex(item => item.id1 == id)
-            // console.log(this.innerHTML);
             if (this.innerHTML == '➕') {
                 cookieArr[index].num++;
 
@@ -114,7 +110,6 @@ define(['jquery', 'jquery-cookie'], function ($) {
         var total = 0;
         $('#main #content-main ul').on('change', '.check', function () {
             $('#main #content-main #content-result .sc_left span').html($('#main #content-main ul input:checked').size());
-            // total = $(this).siblings('.sumPrice');
             if ($(this).prop('checked')) {
                 total += parseFloat($(this).siblings('.sumPrice').html().split('￥')[1]);
             } else {
@@ -131,7 +126,6 @@ define(['jquery', 'jquery-cookie'], function ($) {
         $("#main #content-main #content-result").on('change', '.selectAll', function () {
             $('#main #content-main ul .check').prop('checked', $(this).prop('checked'));
             if ($(this).prop('checked')) {
-                // console.log($('#main #content-main .sumPrice').each());
                 $('#main #content-main ul .check').each(function (index, ele) {
                     total += parseFloat($(ele).siblings('.sumPrice').html().split('￥')[1]);
                 })
@@ -143,11 +137,23 @@ define(['jquery', 'jquery-cookie'], function ($) {
             $('#main #content-result .sc_right .sumprice').html('￥' + total);
         })
     }
+    //显示购物车中的商品个数
+    function goodsCarSum() {
+        var cookieStr = $.cookie('goods');
+        var sum = 0;
+        if (cookieStr) {
+            var cookieArr = JSON.parse(cookieStr);
+            for (var i = 0; i < cookieArr.length; i++) {
+                sum += cookieArr[i].num;
+            }
+        }
+        $('#header .right span').html(sum);
+    }
     return {
         loadMsg: loadMsg,
         removeHandleDelete: removeHandleDelete,
         numctlHandleChange: numctlHandleChange,
         checkboxSelect: checkboxSelect,
-        // selectAll: selectAll,
+        goodsCarSum: goodsCarSum,
     }
 })

@@ -23,13 +23,16 @@ define(['jquery'], function ($) {
                 if (iNum == s) {
                     iNum = 0;
                 }
+
                 tab();
             }, 2000)
+
         }
+        auto();
         function tab() {
-            $('.imgBox .imgList').eq(iNum).fadeIn(300).siblings().fadeOut(300);
+            $('.imgBox .imgList').eq(iNum).fadeIn(500).siblings().fadeOut(500);
         }
-        $('.imgBox .imgList .left').click(function () {
+        $('.left').click(function () {
             clearInterval(timer);
             if (iNum <= -1) {
                 iNum = s - 1;
@@ -37,8 +40,9 @@ define(['jquery'], function ($) {
             iNum--;
             auto();
             tab();
+
         })
-        $('.imgBox .imgList .right').click(function () {
+        $('.right').click(function () {
             clearInterval(timer);
             if (iNum >= s) {
                 iNum = 0;
@@ -46,8 +50,9 @@ define(['jquery'], function ($) {
             iNum++;
             auto();
             tab();
+
         })
-        $('.imgBox').add('.leftRightTabs').mouseenter(function () {
+        $('.imgBox').mouseenter(function () {
             clearInterval(timer);
         }).mouseleave(function () {
             auto();

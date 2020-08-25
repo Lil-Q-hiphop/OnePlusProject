@@ -1,5 +1,6 @@
 define(['jquery', 'jquery-cookie'], function ($) {
     msgLoad();
+    goodsCarSum();
     //加载商品详细信息
     function msgLoad() {
         var local = location.search;
@@ -100,7 +101,12 @@ define(['jquery', 'jquery-cookie'], function ($) {
                     var ed = $(this).index();
                     $("#main .goodsMsg .price").html(`<del>${arr[st].serices[ed].prePrice}</del><span>${arr[st].serices[ed].newPrice}</span>`)
                     $("#main .goodsMsg .btn").html(`<button class="sc_btn" sign="${st}" sign1="${ed}">加入购物车</button>`)
-
+                    $('#main .goodsImg .slideBox').html(`<img src="${arr[st].serices[ed].image}" alt="" class="small">
+                                                        <div class="tools"></div>
+                                                        <div class="area">
+                                                        <img src="${arr[st].serices[ed].image}" alt="" class="big">
+                                                        </div>`)
+                    $(this).css('background', '#09c').siblings().css('background', '#fff');
                 })
                 var tools = $('#main .goodsImg .tools');
                 var areas = $('#main .goodsImg .area');
@@ -164,17 +170,26 @@ define(['jquery', 'jquery-cookie'], function ($) {
                 })
             }
             console.log($.cookie('goods'));
-
+            goodsCarSum();
         })
 
     }
-    // function imgHandleExpand() {
-    //     var tools = $('#main').find('');
-    //     console.log(tools);
-    // }
+    //显示购物车中的商品个数
+    function goodsCarSum() {
+        var cookieStr = $.cookie('goods');
+        var sum = 0;
+        if (cookieStr) {
+            var cookieArr = JSON.parse(cookieStr);
+            for (var i = 0; i < cookieArr.length; i++) {
+                sum += cookieArr[i].num;
+            }
+        }
+        $('#header .right span').html(sum);
+    }
     return {
         msgLoad: msgLoad,
         sc_btnHandleClick: sc_btnHandleClick,
+        goodsCarSum: goodsCarSum,
         // imgHandleExpand, imgHandleExpand,
     }
 })

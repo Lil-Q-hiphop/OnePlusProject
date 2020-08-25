@@ -24,5 +24,6 @@ require(['desc', 'nav'], function (desc, nav) {
     nav.navTop();
     //图片放大镜
     // desc.imgHandleExpand();
+    desc.goodsCarSum();
 
 })

@@ -75,6 +75,19 @@ li {
     #header .right li i {
       font-size: 24px;
       color: black; }
+    #header .right li span {
+      display: inline-block;
+      background: red;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+      position: absolute;
+      border-radius: 50%;
+      line-height: 20px;
+      text-align: center;
+      top: 25px;
+      right: 15px; }
   #header ul .page > a {
     font-size: 16px;
     color: black;
@@ -115,7 +128,8 @@ li {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          align-items: center; }
+          align-items: center;
+          text-decoration: none; }
           #header ul li .container-text .show-window a .series-item-new {
             margin-left: 80px;
             display: inline-block;
@@ -127,6 +141,10 @@ li {
           #header ul li .container-text .show-window a .iconfont {
             margin: 24px 0;
             font-size: 30px; }
+          #header ul li .container-text .show-window a:hover {
+            color: red; }
+            #header ul li .container-text .show-window a:hover .series-item-new {
+              border-color: red; }
 
 #page-footer footer {
   width: 100%;
@@ -308,7 +326,7 @@ li {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 84px;
+            width: 90px;
             margin-top: 30px;
             margin-left: -5px;
             height: 26px;
@@ -318,7 +336,7 @@ li {
               height: 100%; }
             #main #main-content #content-main ul li .numctl span {
               color: #828282;
-              width: 10px;
+              width: 30px;
               display: inline-block;
               font-size: 20px; }
           #main #main-content #content-main ul li .sumPrice {

@@ -28,6 +28,20 @@ li{
            font-size: 24px;
            color: black;
        }
+       span{
+        display: inline-block;
+        background: red;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        position: absolute;
+        border-radius: 50%;
+        line-height: 20px;
+        text-align: center;
+        top: 25px;
+        right: 15px;
+    }
    }
     ul .page>a{
     font-size: 16px;
@@ -74,6 +88,7 @@ li{
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
+                    text-decoration: none;
                     .series-item-new{
                         margin-left: 80px;
                         display:inline-block;
@@ -86,6 +101,12 @@ li{
                     .iconfont{
                         margin: 24px 0;
                         font-size: 30px;
+                    }
+                    &:hover{
+                        color:red;
+                        .series-item-new{
+                            border-color: red;
+                        }
                     }
                 }
             }

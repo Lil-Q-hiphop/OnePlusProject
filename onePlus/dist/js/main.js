@@ -24,6 +24,8 @@ require(['nav', 'list', 'goodslist', 'index'], function (nav, list, goodslist, i
     list.menuList();
     //加载中部商品列表
     goodslist.dlgoods();
+    //显示购物车中的商品总数
+    goodslist.goodsCarSum();
     //主页的一些操作
     index.iCon();
 

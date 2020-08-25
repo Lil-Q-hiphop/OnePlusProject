@@ -29,5 +29,6 @@ require(['nav', 'goodscar'], function (nav, goodscar) {
     goodscar.checkboxSelect();
     //全选按钮
     // goodscar.selectAll();
+    goodscar.goodsCarSum();
 
 })

@@ -1,4 +1,4 @@
-console.log('加载成功');
+console.log('注册页加载成功');
 require.config({
     paths: {
         "jquery": "jquery-1.11.3",
@@ -15,17 +15,9 @@ require.config({
         }
     }
 })
-require(['nav', 'list', 'goodslist', 'index'], function (nav, list, goodslist, index) {
+require(['nav', 'index'], function (nav, index) {
     //加载顶部导航栏
     nav.navTop();
-    //顶部轮播图
-    nav.banner();
-    //加载中部下拉菜单
-    list.menuList();
-    //加载中部商品列表
-    goodslist.dlgoods();
-    //显示购物车中的商品总数
-    goodslist.goodsCarSum();
     //主页的一些操作
     index.iCon();
 
