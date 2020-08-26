@@ -11,6 +11,16 @@ define(['jquery'], function ($) {
         }, function () {
             aDivs.css('display', 'none');
         })
+        var oI = $("#header .right .user");
+        console.log(oI);
+        var oDiv = $("#header .right .user").find('#contentbox');
+        oDiv.css('display', 'none');
+        oI.hover(function () {
+            oDiv.css('display', 'block');
+        }, function () {
+            oDiv.css('display', 'none');
+        })
+
     }
     //轮播图轮播效果
     function banner() {

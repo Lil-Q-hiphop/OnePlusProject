@@ -53,7 +53,8 @@ a:hover {
   text-decoration: none; }
 
 a {
-  color: black; }
+  color: black;
+  text-decoration: none; }
 
 li {
   list-style: none; }
@@ -72,9 +73,36 @@ li {
     margin: 0 2px;
     text-align: center;
     line-height: 60px; }
+    #header .right li:hover {
+      border-bottom: 2px solid #eb0028;
+      text-decoration: none; }
     #header .right li i {
       font-size: 24px;
       color: black; }
+    #header .right li #contentbox {
+      width: 200px;
+      height: 70px;
+      border: 1px solid #dad7d7;
+      z-index: 3;
+      position: absolute;
+      background: #fff;
+      top: 60px;
+      right: 0;
+      text-align: center;
+      line-height: 70px; }
+      #header .right li #contentbox div {
+        display: inline-block;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        background: #9b9797;
+        margin: 10px 10px; }
+        #header .right li #contentbox div a {
+          color: #fff; }
+        #header .right li #contentbox div:hover {
+          background: #e43644; }
     #header .right li span {
       display: inline-block;
       background: red;

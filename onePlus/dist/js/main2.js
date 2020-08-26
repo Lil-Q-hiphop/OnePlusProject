@@ -15,10 +15,12 @@ require.config({
         }
     }
 })
-require(['nav', 'index'], function (nav, index) {
+require(['nav', 'index', 'register'], function (nav, index, register) {
     //加载顶部导航栏
     nav.navTop();
     //主页的一些操作
     index.iCon();
+    //注册
+    register.createUser();
 
 })

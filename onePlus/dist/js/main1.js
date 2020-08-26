@@ -15,10 +15,12 @@ require.config({
         }
     }
 })
-require(['nav', 'index'], function (nav, index) {
+require(['nav', 'index', 'login'], function (nav, index, login) {
     //加载顶部导航栏
     nav.navTop();
     //主页的一些操作
     index.iCon();
+    //登录
+    login.loadUser();
 
 })

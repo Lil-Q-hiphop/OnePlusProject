@@ -121,7 +121,15 @@
             </li>
         </ul>
         <ul class="right">
-            <li><a href=""><i class="iconfont">&#xe60b;</i></a></li>
+            <li class="user">
+                <a href="">
+                    <i class="iconfont">&#xe60b;</i>
+                    <div id="contentbox">
+                        <div><a target="_blank" href="http://localhost:6161/login.html">登录</a></div>
+                        <div><a target="_blank" href="http://localhost:6161/register.html">注册</a></div>
+                    </div>
+                </a>
+            </li>
             <li><a target="_blank" href="http://localhost:6161/goodsCar.html">
                     <i class="iconfont">&#xe6d7;<span></span></i>
                 </a>
@@ -135,8 +143,8 @@
                 <input autocomplete="off" type="text" name="username" placeholder="用户名">
                 <input autocomplete="off" type="text" name="password" placeholder="密码">
                 <input autocomplete="off" type="text" name="repassword" placeholder="确认密码">
-                <div id='alert' class="alert alert-danger" role="alert">...</div>
-                <button class="btn btn-primary pull-right" id="btn1">注册</button>
+                <div id='alert'>...</div>
+                <button id="btn1">注册</button>
                 <a href="http://localhost:6161/login.html">马上登录</a>
 
             </div>

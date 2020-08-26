@@ -26,9 +26,43 @@ li{
        margin: 0 2px;
        text-align: center;
        line-height: 60px;
+       &:hover{
+        border-bottom: 2px solid #eb0028;
+        text-decoration: none;
+    }
        i{
            font-size: 24px;
            color: black;
+           
+       }
+       #contentbox{
+           width: 200px;
+           height: 70px;
+           border: 1px solid #dad7d7;
+           z-index: 3;
+           position: absolute;
+           background: #fff;
+           top: 60px;
+           right: 0;
+           text-align: center;
+           line-height: 70px;
+        //    display: none;
+           div{ 
+                display: inline-block;
+                width: 60px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 14px;
+                background: rgb(155, 151, 151);
+                margin: 10px 10px;
+                a{
+                    color:#fff;
+                }
+                &:hover{
+                    background: #e43644;
+                }
+           }
        }
        span{
            display: inline-block;
