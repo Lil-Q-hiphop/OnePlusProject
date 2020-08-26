@@ -1,4 +1,5 @@
 define(['jquery'], function ($) {
+    //右下角微信图标的显示与隐藏
     function iCon() {
         var oWx = $("#page-footer .top").find('.wechat');
         oWx.hover(function () {

@@ -52,60 +52,6 @@ a {
 a:hover {
   text-decoration: none; }
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-family: MYingHei W5,Roman-55,Microsoft Yahei,sans-serif; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-a {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: none; }
-
 a {
   color: black;
   text-decoration: none; }
@@ -192,6 +138,8 @@ li {
       border-radius: 5px; }
   #header ul li {
     float: left; }
+    #header ul li a {
+      text-decoration: none; }
     #header ul li .container-text {
       display: flex;
       background: #fff;
@@ -210,8 +158,7 @@ li {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          align-items: center;
-          text-decoration: none; }
+          align-items: center; }
           #header ul li .container-text .show-window a .series-item-new {
             margin-left: 80px;
             display: inline-block;
@@ -227,6 +174,194 @@ li {
             color: red; }
             #header ul li .container-text .show-window a:hover .series-item-new {
               border-color: red; }
+
+#banner {
+  width: 1349px;
+  height: 375px;
+  overflow: hidden;
+  position: relative; }
+  #banner .imgBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+    #banner .imgBox li {
+      height: 100%; }
+      #banner .imgBox li a {
+        width: 1349px;
+        height: 100%; }
+        #banner .imgBox li a img {
+          width: 100%;
+          height: 100%;
+          vertical-align: middle; }
+  #banner .leftRightTabs {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #banner .leftRightTabs button {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      font-size: 40px;
+      line-height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.2);
+      color: #fff;
+      outline: none; }
+      #banner .leftRightTabs button:first-of-type {
+        margin-right: 1100px; }
+
+#main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  #main #menuBox {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid black; }
+    #main #menuBox select {
+      position: absolute;
+      top: 10px;
+      width: 180px;
+      height: 40px;
+      color: #1f1f20;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      padding: 6px 0px 6px 10px; }
+    #main #menuBox .s1 {
+      position: absolute;
+      padding-right: 30px;
+      left: 600px; }
+    #main #menuBox .s2 {
+      position: absolute;
+      padding-right: 30px;
+      left: 820px; }
+    #main #menuBox .s3 {
+      position: absolute;
+      padding-right: 30px;
+      left: 1040px; }
+  #main #goodsBox {
+    width: 100%;
+    position: relative; }
+    #main #goodsBox .goodsList {
+      padding: 10px;
+      float: left;
+      width: 449px;
+      height: 560px;
+      background: rgba(247, 242, 242, 0.589);
+      border: 1px solid #f7f2f2; }
+      #main #goodsBox .goodsList:hover {
+        background: transparent; }
+      #main #goodsBox .goodsList .list {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: black;
+        position: relative; }
+        #main #goodsBox .goodsList .list .products-tag {
+          text-align: right;
+          position: absolute;
+          font-size: 16px;
+          background: red;
+          color: #fff;
+          top: 0;
+          right: 10px; }
+        #main #goodsBox .goodsList .list .card-image {
+          width: 360px;
+          height: 360px;
+          margin-top: -16px;
+          border: 1px solid #fff;
+          margin-bottom: 10px;
+          overflow: hidden; }
+          #main #goodsBox .goodsList .list .card-image img {
+            width: 100%; }
+        #main #goodsBox .goodsList .list .btnBox {
+          position: absolute;
+          width: 100%;
+          top: 35%;
+          display: none;
+          justify-content: space-between; }
+          #main #goodsBox .goodsList .list .btnBox span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 45px;
+            background: pink;
+            line-height: 50px; }
+        #main #goodsBox .goodsList .list .accessory-name {
+          margin-top: 25px;
+          margin-bottom: 20px;
+          font-size: 20px;
+          color: black; }
+  #main #serverBox {
+    width: 100%;
+    height: 172px;
+    display: flex;
+    justify-content: space-around; }
+    #main #serverBox section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      #main #serverBox section a:hover {
+        text-decoration: none; }
+      #main #serverBox section p {
+        font-family: MYingHei W5,Roman-55,Microsoft Yahei,sans-serif;
+        color: black;
+        margin-top: 10px; }
+
+#middle {
+  border-bottom: 1px solid #f7f2f2;
+  font-family: MYingHei W5,Roman-55,Microsoft Yahei,sans-serif;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; }
+  #middle .nav-bread {
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 50px; }
+    #middle .nav-bread .home {
+      width: 32px;
+      display: inline-block; }
+    #middle .nav-bread .bread-ol {
+      width: 71px;
+      font-size: 16px;
+      display: inline-block;
+      margin: 0 12px; }
+  #middle a {
+    text-decoration: none;
+    color: black; }
+    #middle a:hover {
+      text-decoration: none; }
 
 #page-footer footer {
   width: 100%;
@@ -344,150 +479,13 @@ li {
   #page-footer a:hover {
     text-decoration: none; }
 
-a {
-  color: black;
-  text-decoration: none; }
-
-li {
-  list-style: none; }
-
-#banner {
-  width: 100%;
-  height: 300px;
-  position: relative; }
-  #banner img {
-    vertical-align: middle;
-    height: 100%;
+#ewm {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  cursor: pointer; }
+  #ewm img {
     width: 100%;
-    clear: both; }
-  #banner .box {
-    position: absolute;
-    top: 60px;
-    left: 280px;
-    color: #fff; }
-    #banner .box p {
-      width: 330px;
-      height: 40px;
-      line-height: 40px;
-      margin: 0; }
-      #banner .box p:first-child {
-        font-size: 20px;
-        margin-bottom: 30px; }
-      #banner .box p:nth-child(n+2) {
-        font-size: 16px;
-        margin-bottom: 5px; }
-    #banner .box a {
-      display: inline-block;
-      color: #fff;
-      font-size: 16px; }
-
-#main {
-  width: 100%; }
-  #main #content {
-    width: 100%;
-    height: 680px;
-    background: skyblue;
-    margin-top: 10px;
-    position: relative;
-    cursor: pointer; }
-    #main #content img {
-      width: 100%;
-      height: 100%; }
-    #main #content .box {
-      width: 378px;
-      height: 245px;
-      position: absolute; }
-      #main #content .box .title {
-        font-size: 34px; }
-      #main #content .box .msg {
-        font-size: 18px;
-        margin: 20px 0; }
-      #main #content .box .price {
-        font-size: 18px; }
-      #main #content .box button {
-        width: 100px;
-        height: 40px;
-        border: 2px solid #000;
-        color: #000;
-        font-size: 16px;
-        margin-bottom: 10px; }
-      #main #content .box a {
-        display: block;
-        text-decoration: none;
-        color: #000;
-        font-size: 16px; }
-    #main #content:first-of-type .box {
-      top: 200px;
-      left: 280px; }
-    #main #content:nth-child(2) .box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      top: 220px;
-      left: 530px; }
-  #main #middle {
-    width: 100%;
-    height: 1060px;
-    margin-top: 10px; }
-    #main #middle ul {
-      width: 100%; }
-      #main #middle ul li {
-        width: 645px;
-        height: 500px;
-        float: left;
-        margin: 14px;
-        overflow: hidden;
-        background-size: cover; }
-        #main #middle ul li .box {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 20px; }
-          #main #middle ul li .box .title {
-            font-size: 24px;
-            text-align: center; }
-          #main #middle ul li .box .msg {
-            font-size: 18px; }
-          #main #middle ul li .box a {
-            font-size: 16px;
-            color: black;
-            text-decoration: none; }
-        #main #middle ul li .list {
-          text-decoration: none;
-          color: black; }
-          #main #middle ul li .list:nth-child(3) {
-            color: #fff; }
-  #main #footer {
-    width: 100%;
-    height: 480px;
-    margin-top: 10px;
-    overflow: hidden; }
-    #main #footer #contain {
-      width: 920px;
-      height: 360px;
-      margin: 60px auto; }
-      #main #footer #contain .imsg {
-        display: inline-block;
-        width: 293px;
-        height: 100%;
-        margin: 0 5px; }
-        #main #footer #contain .imsg .img {
-          width: 100%;
-          height: 230px;
-          background-size: cover; }
-        #main #footer #contain .imsg .title {
-          height: 24px;
-          color: #666;
-          font-size: 18px;
-          line-height: 24px;
-          margin-top: 10px;
-          padding-left: 15px; }
-        #main #footer #contain .imsg .msg {
-          font-size: 18px;
-          color: black;
-          padding: 0 15px; }
-        #main #footer #contain .imsg a {
-          display: block;
-          color: #0099cc;
-          padding-left: 15px;
-          font-size: 16px; }
+    height: 100%; }

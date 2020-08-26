@@ -31,12 +31,21 @@ gulp.task('php', function () {
         .pipe(connect.reload());
 });
 
-gulp.task("scss", function () {
+gulp.task("scssIndex", function () {
     return gulp.src("stylesheet/index.scss")
         .pipe(scss())
         .pipe(gulp.dest("dist/css"))
         .pipe(minifycss())
         .pipe(rename("index.min.css"))
+        .pipe(gulp.dest("dist/css"))
+        .pipe(connect.reload());
+});
+gulp.task("scssShop", function () {
+    return gulp.src("stylesheet/shopstore.scss")
+        .pipe(scss())
+        .pipe(gulp.dest("dist/css"))
+        .pipe(minifycss())
+        .pipe(rename("shopstore.min.css"))
         .pipe(gulp.dest("dist/css"))
         .pipe(connect.reload());
 });
@@ -48,12 +57,13 @@ gulp.task("scssAll", function () {
         .pipe(connect.reload());
 });
 
-gulp.task("build", ["scss", "scripts", "copy-html", "data", "scssAll", "php"], function () {
+gulp.task("build", ["scssIndex", "scssShop", "scripts", "copy-html", "data", "scssAll", "php"], function () {
     console.log("项目建立成功");
 });
 
 gulp.task("watch", function () {
-    gulp.watch("stylesheet/index.scss", ["scss"]);
+    gulp.watch("stylesheet/index.scss", ["scssIndex"]);
+    gulp.watch("stylesheet/shopstore.scss", ["scssShop"]);
     gulp.watch(["*.js", "!gulpfile.js"], ['scripts']);
     gulp.watch("*.html", ['copy-html']);
     gulp.watch(["*.json", "!package.json"], ['data']);
