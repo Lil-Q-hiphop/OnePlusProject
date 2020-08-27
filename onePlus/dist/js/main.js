@@ -17,6 +17,8 @@ require.config({
 })
 require(['nav', 'list', 'goodslist', 'index'], function (nav, list, goodslist, index) {
     //加载顶部导航栏
+    nav.navLoad();
+    //顶部导航效果
     nav.navTop();
     //顶部轮播图
     nav.banner();

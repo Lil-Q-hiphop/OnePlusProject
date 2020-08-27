@@ -12,7 +12,6 @@ define(['jquery'], function ($) {
             aDivs.css('display', 'none');
         })
         var oI = $("#header .right .user");
-        console.log(oI);
         var oDiv = $("#header .right .user").find('#contentbox');
         oDiv.css('display', 'none');
         oI.hover(function () {
@@ -68,8 +67,32 @@ define(['jquery'], function ($) {
             auto();
         })
     }
+    //动态生成顶部导航
+    function navLoad() {
+        $.ajax({
+            type: 'get',
+            url: '../data/menu.json',
+            success: function (arr) {
+                var newArr = arr[0].serise;
+                let str = ``;
+                for (var i = 0; i < newArr.length; i++) {
+                    str += `<li class="show-window">
+                    <a href="http://localhost:6161/classify.html?${newArr[i].value}">
+                        <i class="iconfont">${newArr[i].tag}</i>
+                        <span>${newArr[i].text}</span>
+                    </a>
+                </li>`
+                }
+                $('#header .center li .store').html(str);
+            },
+            error: function (msg) {
+                console.log(msg);
+            }
+        })
+    }
     return {
         navTop: navTop,
         banner: banner,
+        navLoad: navLoad,
     }
 })

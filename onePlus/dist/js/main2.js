@@ -17,6 +17,8 @@ require.config({
 })
 require(['nav', 'index', 'register'], function (nav, index, register) {
     //加载顶部导航栏
+    nav.navLoad();
+    //顶部导航效果
     nav.navTop();
     //主页的一些操作
     index.iCon();

@@ -16,8 +16,9 @@ require.config({
     }
 })
 require(['nav', 'goodscar'], function (nav, goodscar) {
-
-    //顶部导航栏效果
+    //加载顶部导航栏
+    nav.navLoad();
+    //顶部导航效果
     nav.navTop();
     //加载购物车中商品信息
     goodscar.loadMsg();

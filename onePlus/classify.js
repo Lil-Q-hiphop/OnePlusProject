@@ -1,9 +1,10 @@
-console.log('注册页加载成功');
+console.log('商品分类页加载成功了');
 require.config({
     paths: {
         "jquery": "jquery-1.11.3",
         "jquery-cookie": "jquery.cookie",
         "parabola": "parabola",
+        'desc': 'desc',
         'index': 'index',
     },
     shim: {
@@ -15,14 +16,15 @@ require.config({
         }
     }
 })
-require(['nav', 'index', 'register'], function (nav, index, register) {
-    //加载顶部导航栏
+require(['desc', 'nav', 'index', 'goodsclass'], function (desc, nav, index, goodsclass) {
     nav.navLoad();
-    //顶部导航效果
+    //顶部导航栏
     nav.navTop();
+    //购物车商品数量
+    desc.goodsCarSum();
     //主页的一些操作
     index.iCon();
-    //注册
-    register.createUser();
+    //加载不同分类的商品
+    goodsclass.loadClass();
 
 })

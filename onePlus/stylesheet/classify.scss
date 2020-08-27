@@ -1,0 +1,102 @@
+@import "common";
+a{
+    text-decoration: none;
+}
+#banner{
+    width: 100%;
+    height: 275px;
+    position: relative;
+    #bg{
+        width: 100%;
+        height: 100%;
+    }
+    #title{
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 48px;
+        text-align: center;
+        font-size: 40px;
+        color:#fff;
+    }
+}
+#content{
+    width: 100%;
+    // height: 800px;
+    // background: pink;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    #goodsBox{
+        width: 100%;
+        position: relative;
+        .goodsList{
+            padding: 10px;
+            float: left;
+            width: 427px;
+            height: 560px;
+            background: rgba(247, 242, 242, 0.589);
+            border: 1px solid rgba(247, 242, 242,1);
+            &:hover{
+                background: transparent;
+            }
+            .list{  
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                
+                color: black;
+                position: relative;
+                .products-tag{
+                    text-align: right;
+                    position: absolute;
+                    font-size: 16px;
+                    background: red;
+                    color:#fff;
+                    top: 0;
+                    right: 10px;
+                }
+                .card-image{
+                    width: 360px;
+                    height: 360px;
+                    margin-top: -16px;
+                    border: 1px solid #fff;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .btnBox{
+                    position: absolute;
+                    width: 100%;
+                    
+                    // background: pink;
+                    top: 35%;
+                    display: none;
+                    justify-content: space-between;
+                    span{
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        text-align: center;
+                        margin: 0 45px;
+                        background: pink;
+                        line-height: 50px;
+                    }
+                }
+                .accessory-name{
+                    margin-top: 25px;
+                    margin-bottom:20px;
+                    font-size: 20px;
+                    color:black;
+                }
+            }
+        }
+    }
+}

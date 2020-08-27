@@ -4,39 +4,51 @@
         "serise": [
             {
                 "value": "CAT00000111",
+                "tag": "&#xe71f;",
                 "text": "手机",
                 "url": "https://www.oneplus.com/cn/6t",
-                "track": "TD_商城_分类_手机"
+                "track": "TD_商城_分类_手机",
+                "image": "https://image01.oneplus.cn/shop/201903/02/1231/993f051b47cddeaaa53af522e247b821_1398_0.jpg"
             },
             {
                 "value": "CAT00000211",
+                "tag": "&#xe60f;",
                 "text": "耳机",
                 "url": "https://www.oneplus.com/cn/store/audio",
-                "track": "TD_商城_分类_耳机"
+                "track": "TD_商城_分类_耳机",
+                "image": "http://image01.oneplus.cn/shop/201903/02/731/7fdb616f11dd875f0a1977ba16935c7e_1398_0.jpg"
             },
             {
                 "value": "CAT00000311",
+                "tag": "&#xe610;",
                 "text": "壳/膜",
                 "url": "https://www.oneplus.com/cn/store/cases",
-                "track": "TD_商城_分类_壳/膜"
+                "track": "TD_商城_分类_壳/膜",
+                "image": "https://image01.oneplus.cn/shop/202006/02/122/db3ac267c2933a4a88d220a8e979081d_1398_0.jpg"
             },
             {
                 "value": "CAT00000511",
+                "tag": "&#xe60e;",
                 "text": "适配器/数据线",
                 "url": "https://www.oneplus.com/cn/store/cables",
-                "track": "TD_商城_分类_适配器/数据线"
+                "track": "TD_商城_分类_适配器/数据线",
+                "image": "https://image01.oneplus.cn/shop/201903/02/34/cb42e7e93626ef4e3e134cc1080d3b5a_1398_0.jpg"
             },
             {
                 "value": "CAT00000611",
+                "tag": "&#xe64b;",
                 "text": "套装",
                 "url": "https://www.oneplus.com/cn/store/bundles",
-                "track": "TD_商城_分类_套装"
+                "track": "TD_商城_分类_套装",
+                "image": "https://image01.oneplus.cn/shop/201903/02/318/cc5e4e6ab88a59ed56f711b3a0bf0784_1398_0.jpg"
             },
             {
                 "value": "CAT00000711",
+                "tag": "&#xe613;",
                 "text": "生活馆",
                 "url": "https://www.oneplus.com/cn/store/lifestyle",
-                "track": "TD_商城_分类_生活馆"
+                "track": "TD_商城_分类_生活馆",
+                "image": "//image01.oneplus.cn/shop/201903/09/1211/433bfeb5d307dacec2fd27fc7fa05e21_1398_0.jpg"
             }
         ]
     },
