@@ -17,6 +17,9 @@ define(['jquery',], function ($) {
                         oAlert.css('background', 'red');
                     } else {
                         oAlert.css('background', 'green');
+                        setTimeout(() => {
+                            location.assign('shopstore.html');
+                        }, 500);
                     }
                     oAlert.css('display', 'block');
                     oAlert.html(obj.msg);

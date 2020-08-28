@@ -24,6 +24,5 @@ require(['nav', 'index', 'register'], function (nav, index, register) {
     index.iCon();
     //注册
     register.createUser();
-    register.checkUser();
 
 })

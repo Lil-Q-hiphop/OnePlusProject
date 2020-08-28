@@ -14,7 +14,7 @@ define(['jquery', 'jquery-cookie'], function ($) {
                 for (var i = 0; i < arr.length; i++) {
                     if ((flag == arr[i].value) || (flag == arr[i].value1)) {
                         str1 += `<div class="goodsList ${arr[i].value} ${arr[i].value1}">
-                        <a target="_blank" class="list " href="http://localhost:6161/descxxx.html?${arr[i].flag}">
+                        <a target="_blank" class="list " href="descxxx.html?${arr[i].flag}">
                             <div class="products-tag">${arr[i].tag}</div>
                             <div class="card-image">
                                 <img src="${arr[i].image}" alt="">

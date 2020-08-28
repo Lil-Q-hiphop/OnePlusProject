@@ -77,7 +77,7 @@ define(['jquery'], function ($) {
                 let str = ``;
                 for (var i = 0; i < newArr.length; i++) {
                     str += `<li class="show-window">
-                    <a href="http://localhost:6161/classify.html?${newArr[i].value}">
+                    <a href="classify.html?${newArr[i].value}">
                         <i class="iconfont">${newArr[i].tag}</i>
                         <span>${newArr[i].text}</span>
                     </a>

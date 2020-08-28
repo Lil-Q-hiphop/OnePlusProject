@@ -30,12 +30,12 @@ define(['jquery', 'jquery-cookie'], function ($) {
 
                     str += `<li class="items" id="${newArr[i].number}">
                     <input type="checkbox" class="check">
-                    <a href="http://localhost:6161/descxxx.html?${newArr[i].flag}" class="imgs">
+                    <a href="descxxx.html?${newArr[i].flag}" class="imgs">
                         <img src="${newArr[i].image}"
                             alt="">
                     </a>
                     <div class="goodsname">
-                        <a href="http://localhost:6161/descxxx.html?${newArr[i].flag}" class="nms">
+                        <a href="descxxx.html?${newArr[i].flag}" class="nms">
                             ${newArr[i].name}
                         </a>
                     </div>
